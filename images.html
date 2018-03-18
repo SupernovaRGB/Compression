@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <font size="4" face="Agency FB"><h1>Image Compression</h1>
+    <a href="index.html">Home</a>
+    <a href="images.html">Image</a>
+    <a href="audio.html">Audio</a><br/>
+
+    <h2>Lossy and Lossless Image Compression</h2><br/>
+    <body>
+
+      <h3>The difference between lossy and lossless compression on images</h3>
+        <p>There is a certain point where a file can be compressed without losing any information and that is lossless compression,
+        any further and you lose data, this is lossy compression.
+        In a text or program file any data lost could cause curruption or serious damage so lossless compression is used, but
+        in images some data can be removed without the eye noticing it so it would be preferable to use lossy compression so that
+        the file size is reduced so the image can load quickly on websites.</p>
+
+      <h3>Why is it important for web designers to compress image files?</h3>
+        <p>It's important for web designers to compress images on their websites as it takes a long time to load an image that
+        is very big, because it has to download every byte and there are millions of bytes in a high quality image and downloading
+        every single one of them would take longer than preferable.</p>
+
+      <h3>The effects of lossy and lossless compression</h3>
+        <p>Lossy compression will get rid of data that isnt as important as other data such as high frequencies in an image, this
+        process is irreversible meaning you can't get the data back, as for lossless you cannot notice the difference even though
+        the file size is reduced, and you can revert to the original image if needed.</p>
+
+      <h3>Lowering the quality</h3>
+        <table style="width:60%" border="1">
+          <tr>
+            <th>Image</th>
+            <th>Quality</th>
+            <th>Bytes</th>
+            <th>Comment</th>
+          </tr>
+          <tr>
+            <td><img src="Images/highest.jpg"></td>
+            <td>Highest Qulity Q=100</td>
+            <td>254,121</td>
+            <td>Extremely minor artefacts</td>
+          </tr>
+          <tr>
+            <td><img src="Images/high.jpg"></td>
+            <td>High Quality Q=33</td>
+            <td>248,432</td>
+            <td>Initial signs of frequency loss</td>
+          </tr>
+          <tr>
+            <td><img src="Images/medium.jpg"></td>
+            <td>Medium Quality Q=25</td>
+            <td>154,408</td>
+            <td>Loss of high frequency information</td>
+          </tr>
+          <tr>
+            <td><img src="Images/low.jpg" width=100%></td>
+            <td>Low Quality Q=10</td>
+            <td>7,413</td>
+            <td>Severe frequency loss</td>
+          </tr>
+        </table><br/>
+      <h3>Refrences</h3>
+      <p>
+      <a href="http://www.dom4j.org/webdevtips/keeping-image-file-sizes-small.php" target=_blank>
+      www.dom4j.org/webdevtips/keeping-image-file-sizes-small.php<a> <br /> <br>
+      <a href="http://whatis.techtarget.com/definition/image-compression" target=_blank>
+      whatis.techtarget.com/definition/image-compression</a><br /> <br>
+      <a href="https://en.wikipedia.org/wiki/Lossy_compression#Editing_of_lossy_files" target=_blank>
+      en.wikipedia.org/wiki/Lossy_compression#Editing_of_lossy_files</a><br /> <br>
+      <a href="https://optimus.keycdn.com/support/lossy-vs-lossless/" target=_blank>
+      optimus.keycdn.com/support/lossy-vs-lossless/</a><br/>
+    </body>
+</html>
